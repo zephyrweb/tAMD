@@ -95,7 +95,7 @@ function addDefinition(id, dependencies, factory, exportsIdx) {
     }
 
     tAMD._post(function(id_, moduleValue_) {
-        if (id_ && moduleValue_) {
+        if (id_) {
             definitions[id_] = moduleValue_;
             satisfy(id_);
         }
